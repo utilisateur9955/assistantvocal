@@ -54,4 +54,4 @@ def wikisearch2(text):
     first_paragraph = content.split("\n\n")[0]
     return first_paragraph
 
-print(wikisearch2("Python"))
+print(wikisearch2("Linux"))
