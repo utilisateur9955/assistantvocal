@@ -61,7 +61,6 @@ def recognition():
 def web(path):
     '''
     ouvre un site web
-
     Entrée : mot cle
     Sortie : ouverture du navigateur
     '''
@@ -101,8 +100,9 @@ def get_api_key():
     Entrée : aucune
     Sortie : clé d'API
     '''
-    with open('API key.txt') as f:
-        return f.read().strip() # retire les retours à la ligne 
+    with open('api_key.txt') as f:
+        api_key = f.read().strip()
+        return api_key
 
 def gemini_answer(answer) : 
     '''
@@ -116,7 +116,6 @@ def gemini_answer(answer) :
         model='gemini-3-flash-preview', 
         contents=answer 
     ) 
-    
     result = response.text 
     result = result.replace("**", "") 
     return(result) 

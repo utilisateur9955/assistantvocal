@@ -4,13 +4,14 @@ import pyttsx3
 from bs4 import BeautifulSoup
 import requests
 engine = pyttsx3.init()
+
 def googlesearch(texte):
     try:
         query = texte
         search_results = search(query)
         first_result = next(search_results)
         response = requests.get(first_result)
-        soup = BeautifulSoup(response.text, 'html.parser')
+        soup = BeautifulSoup(response.text, features='html.parser')
         paragraph = soup.find('p')
         if paragraph:
             answer = paragraph.get_text()
