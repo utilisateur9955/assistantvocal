@@ -1,6 +1,6 @@
 # Bob v1.0 (fork)
 
-Assistant vocal permettant de faire des recherche wikipédia/ par ia
+Assistant vocal permettant de faire des recherches Wikipédia/par ia
 
 > [!NOTE]
 >
@@ -8,9 +8,9 @@ Assistant vocal permettant de faire des recherche wikipédia/ par ia
 
 > [!WARNING] 
 >
-> Ne partagez JAMAIS votre clé API et n'envoyé JAMAIS votre code sur github avec votre clé API 
+> Ne partagez JAMAIS votre clé API et n'envoyez JAMAIS votre code sur github avec votre clé API 
 
-### Lancer le programmme
+### Lancer le programme
 
-- Tapez ``pip install -r requirements.txt`` (il est conseillez de créer pyenv pour installez les librairies)
-- Lancer le ficher main.py 
+- Tapez ``pip install -r requirements.txt`` (il est conseillé de créer pyenv pour installer les librairies)
+- Lancer le fichier main.py 
